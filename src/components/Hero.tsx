@@ -13,11 +13,11 @@ export function Hero() {
   useEffect(() => {
     if (containerRef.current) {
       const elementos = containerRef.current.querySelectorAll('[id="animar"]');
-      
+
       elementos.forEach((elemento, index) => {
         gsap.to(elemento, {
           y: -15,
-          duration: 1.5 + (index * 0.2),
+          duration: 1.5 + index * 0.2,
           ease: "power1.inOut",
           yoyo: true,
           repeat: -1,
@@ -28,9 +28,9 @@ export function Hero() {
   return (
     <div
       id="hero-background"
-      className="bg-[url('/background.webp')] h-screen w-full bg-cover bg-center mx-auto"
+      className="bg-[url('/background.webp')] w-full bg-cover bg-center pb-40 mx-auto"
     >
-      <div id="hero-container" className="h-screen max-w-360 mx-auto px-4">
+      <div id="hero-container" className="h-auto max-w-360 mx-auto px-4">
         <div
           id="hero-box"
           className="flex flex-col md:justify-between md:mx-34 md:flex-row justify-center text-center md:text-start items-center pt-30 md:pt-34"
@@ -56,10 +56,22 @@ export function Hero() {
             </div>
           </div>
           <div id="ckris" className="relative md:mt-3 mt-26" ref={containerRef}>
-            <img id="animar" className="w-[71px] absolute right-20 top-2" src={angular} />
+            <img
+              id="animar"
+              className="w-[71px] absolute right-20 top-2"
+              src={angular}
+            />
             <img id="animar" className="w-[78px] absolute top-20" src={react} />
-            <img id="animar" className="w-[71px] absolute right-0 top-40" src={next} />
-            <img id="animar" className="w-[90px] absolute bottom-25" src={tailwind} />
+            <img
+              id="animar"
+              className="w-[71px] absolute right-0 top-40"
+              src={next}
+            />
+            <img
+              id="animar"
+              className="w-[90px] absolute bottom-25"
+              src={tailwind}
+            />
             <img className="w-[390px] px-2" src={ckris} />
           </div>
         </div>

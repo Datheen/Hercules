@@ -7,7 +7,7 @@ export function Home() {
     <>
       <Header />
       <Hero />
-      <Features/>
+      <Features />
     </>
   );
 }

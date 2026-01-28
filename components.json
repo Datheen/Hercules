@@ -19,6 +19,7 @@
     "hooks": "@/hooks"
   },
   "registries": {
-    "@paceui-ui": "https://ui.paceui.com/r/{name}.json"
+    "@paceui-ui": "https://ui.paceui.com/r/{name}.json",
+    "@magicui": "https://magicui.design/r/{name}"
   }
 }

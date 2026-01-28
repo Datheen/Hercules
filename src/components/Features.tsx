@@ -1,4 +1,10 @@
 import { Code2 as Code, Paintbrush, Rocket } from "lucide-react";
+import { Marquee } from "./ui/marquee";
+import typescript from "@/assets/img/features/typescript.webp";
+import nodejs from "@/assets/img/features/nodejs.webp";
+import next from "@/assets/img/features/nextwide.webp";
+import angularwide from "@/assets/img/features/angularwide.webp";
+import tailwindlogo from "@/assets/img/features/tailwindcsslogo.webp"
 
 const features = [
   {
@@ -25,15 +31,24 @@ const features = [
 function Features() {
   return (
     <div className="w-full bg-[#0b1b25]">
+      <Marquee pauseOnHover className="[--duration:20s]">
+        <div className="flex items-center gap-20 bg-black px-6 py-4">
+          <img src={typescript} className="w-40 pb-2 ml-11" />
+          <img src={next} className="w-40" />
+          <img src={angularwide} className="w-40" />
+          <img src={nodejs} className="w-40 pb-3" />
+          <img src={tailwindlogo} className="w-60 " />
+        </div>
+      </Marquee>
       <section
         id="features"
-        className="container grid gap-6 py-16 md:gap-8 lg:py-32 mx-auto"
+        className="container grid gap-6 py-16 md:gap-8  mx-auto"
       >
         <h2 className="font-bold text-white mb-10 mx-auto text-center text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Features
         </h2>
 
-        <div className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-10 md:grid-cols-3">
+        <div className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-10 md:grid-cols-3 mx-auto">
           {features.map(({ title, description, icon: Icon }, i) => (
             <div
               key={i}
