@@ -1,12 +1,12 @@
 export function Header() {
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-6xl">
-      <div className="bg-white/20 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-1.25 py-0.75">
+      <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-[9px] py-[6px]">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-primary rounded-full p-1 group-hover:scale-110 transition-transform">
+            <div className="bg-primary rounded-full p-1">
               <svg
-                className="w-11 h-11 text-zinc-600"
+                className="w-9   h-9   text-zinc-600"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -25,10 +25,10 @@ export function Header() {
           </div>
 
           <div className="flex">
-            <div className="bg-primary py-2 px-4 rounded-full text-zinc-700 font-bold">
+            <div className="bg-primary py-2 px-4 rounded-full text-zinc-900 font-semibold">
               <span>Início</span>
             </div>
-            <div className=" py-2 px-4 text-zinc-900 font-semibold">
+            <div className=" py-2 px-4 text-zinc-900 font-medium">
               <span>Sobre</span>
             </div>
             <div id="divider" className="w-0.5 bg-white/20"></div>
