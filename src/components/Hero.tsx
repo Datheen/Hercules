@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import ckris from "../assets/img/hero/ckris.webp";
-import { ButtonAnim } from "./ui/ButtonAnim";
-import angular from "../assets/img/hero/angular.webp";
-import react from "../assets/img/hero/React.webp";
-import next from "../assets/img/hero/Nextjs.webp";
-import tailwind from "../assets/img/hero/tailwind.webp";
+import ckris from "@/assets/img/hero/ckris.webp";
+import { ButtonAnim } from "@/components/ui/ButtonAnim";
+import angular from "@/assets/img/hero/angular.webp";
+import react from "@/assets/img/hero/React.webp";
+import next from "@/assets/img/hero/Nextjs.webp";
+import tailwind from "@/assets/img/hero/tailwind.webp";
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
