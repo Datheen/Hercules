@@ -8,22 +8,22 @@ import tailwindlogo from "@/assets/img/features/tailwindcsslogo.webp"
 
 const features = [
   {
-    title: "Next.js & TypeScript",
+    title: "Clean Code (Código Limpo)",
     description:
-      "Built with Next.js and TypeScript, ensuring high performance, scalability, and type safety for a seamless development experience.",
+      "Tenho uma mentalidade focada em código limpo, legível e sustentável. Busco soluções simples, bem estruturadas e fáceis de manter, sempre pensando na evolução do projeto, na colaboração em equipe e na qualidade a longo prazo.",
     icon: Code,
   },
   {
-    title: "ShadCN & Tailwind CSS",
+    title: "Front-end UX/UI",
     description:
-      "Leverage the power of ShadCN and Tailwind CSS for a consistent, minimal, and highly customizable UI design.",
+      "Atuo com foco em excelência no front-end, criando interfaces modernas, consistentes e bem refinadas. Tenho atenção aos detalhes visuais, à experiência do usuário e à construção de componentes reutilizáveis que unem estética e funcionalidade.",
     icon: Paintbrush,
   },
 
   {
-    title: "Easy to Use",
+    title: "Performance",
     description:
-      "Designed for seamless integration, clear documentation, and an intuitive API, making it effortless for developers to build and scale.",
+      "Desenvolvo aplicações orientadas à performance, priorizando carregamento rápido, responsividade e otimizações reais. Trabalho com boas práticas para reduzir custo de renderização, otimizar assets e garantir uma experiência fluida em qualquer dispositivo.",
     icon: Rocket,
   },
 ];
@@ -44,15 +44,15 @@ function Features() {
         id="features"
         className="container grid gap-6 py-16 md:gap-8  mx-auto"
       >
-        <h2 className="font-bold text-white mb-10 mx-auto text-center text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Features
+        <h2 className="font-bold text-[#7BCD00] mb-10 mx-auto text-center text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
+          Competências
         </h2>
 
         <div className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-10 md:grid-cols-3 mx-auto">
           {features.map(({ title, description, icon: Icon }, i) => (
             <div
               key={i}
-              className="animated-box relative overflow-hidden rounded-lg border border-[#39b362] text-primary p-2"
+              className="animated-box relative overflow-hidden rounded-lg border border-[#7BCD00] text-[#7BCD00] p-2"
             >
               <div className="flex min-h-[180px] flex-col justify-start rounded-md p-6">
                 <Icon className="mb-3 h-8 w-8" />
