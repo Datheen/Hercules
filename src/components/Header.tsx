@@ -1,12 +1,12 @@
 export function Header() {
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-6xl">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-0 ">
       <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-[9px] py-[6px]">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-primary rounded-full p-1">
+            <div className="bg-gradient-to-r from-lime-400/80 to-green-700/80 rounded-full p-1">
               <svg
-                className="w-9   h-9   text-zinc-600"
+                className="w-9   h-9   text-white/80"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -19,13 +19,13 @@ export function Header() {
               </svg>
             </div>
 
-            <p className="text-primary hidden md:block font-semibold text-xl">
+            <p className="text-lime-400 hidden md:block font-semibold text-xl">
               Ckristian Felipe
             </p>
           </div>
 
           <div className="flex">
-            <div className="bg-primary py-2 px-4 rounded-full text-zinc-900 font-semibold">
+            <div className="bg-gradient-to-r from-lime-400/80 to-green-700/80 py-2 px-4 rounded-full text-white/80 font-semibold">
               <span>Início</span>
             </div>
             <div className=" py-2 px-4 text-zinc-900 font-medium">
