@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Encanto Amazônico",
     "description": "Site de venda de plantas amazônicas e outras variedades.",
-    "image": "/src/assets/img/projects/project-1.webp",
+    "image": "src/assets/img/projects/project-1.webp",
     "type": "E-commerce",
     "variant": "bg-green-900/50 w-28 h-6 rounded-full"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Civix Advocacia",
     "description": "Landing Page para o seguimento de advogados e aréa do direito.",
-    "image": "/src/assets/img/projects/project-3.webp",
+    "image": "src/assets/img/projects/project-3.webp",
     "type": "Landing Page",
     "variant": "bg-yellow-900/50 w-28 h-6 rounded-full"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Medic GO",
     "description": "Sistema Web desenvolvido para organizar gerenciamento de estoque variados.",
-    "image": "/src/assets/img/projects/project-2.webp",
+    "image": "src/assets/img/projects/project-2.webp",
     "type": "Sistema Web",
     "variant": "bg-red-900/50 w-28 h-6 rounded-full"
   }
