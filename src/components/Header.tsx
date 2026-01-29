@@ -3,10 +3,10 @@ import { AtomIcon } from "./ui/LogoIcon";
 export function Header() {
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-0 ">
-      <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-[9px] py-[6px]">
+      <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-2.25 py-1.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-gradient-to-r from-lime-400/80 to-green-700/80 rounded-full p-1">
+            <div className="bg-linear-to-r from-lime-400/80 to-green-700/80 rounded-full p-1">
               <AtomIcon className="text-white/80 hover:cursor-pointer p-1"></AtomIcon>
             </div>
 
@@ -16,7 +16,7 @@ export function Header() {
           </div>
 
           <div className="flex">
-            <div className="bg-gradient-to-r from-lime-400/80 to-green-700/80 py-2 px-4 rounded-full text-white/80 font-semibold">
+            <div className="bg-linear-to-r from-lime-400/80 to-green-700/80 py-2 px-4 rounded-full text-white/80 font-semibold">
               <span>Início</span>
             </div>
             <div className=" py-2 px-4 text-zinc-900 font-medium">
