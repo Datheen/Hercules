@@ -1,5 +1,6 @@
 import data from "@/data/data.json";
 import { Star } from "./ui/Star";
+import { TextAnimate } from "@/components/ui/TextAnimate";
 
 export function Projects() {
   return (
@@ -10,11 +11,11 @@ export function Projects() {
       >
         <div className=" md:px-20 text-center flex flex-col gap-y-10">
           <h2 className="mt-20 font-bold text-[#7BCD00] mb-10 mx-auto text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-            Últimos Projetos
+             <TextAnimate>Últimos Projetos</TextAnimate>
           </h2>
           <p className="text-2xl md:mx-40 -mt-12  text-[#7BCD00] ">
-            Alguns dos projetos desenvolvidos pelo Greenleaf Studio, explorando
-            diferentes áreas e desafios do desenvolvimento front-end.
+            <TextAnimate>Alguns dos projetos desenvolvidos pelo Greenleaf Studio, explorando
+            diferentes áreas e desafios do desenvolvimento front-end.</TextAnimate>
           </p>
         </div>
         {/* Cards */}

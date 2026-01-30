@@ -5,6 +5,13 @@ import nodejs from "@/assets/img/features/nodejs.webp";
 import next from "@/assets/img/features/nextwide.webp";
 import angularwide from "@/assets/img/features/angularwide.webp";
 import tailwindlogo from "@/assets/img/features/tailwindcsslogo.webp"
+import { TextAnimate } from "@/components/ui/TextAnimate";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
@@ -29,6 +36,27 @@ const features = [
 ];
 
 function Features() {
+  const cardsRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    const cards = cardsRef.current?.querySelectorAll('.animated-box');
+    
+    if (cards) {
+      gsap.from(cards, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: cardsRef.current,
+          start: "top 80%",
+          toggleActions: "play none none none"
+        }
+      });
+    }
+  }, []);
+
   return (
     <div className="w-full bg-[#0b1b25]">
       <Marquee pauseOnHover className="[--duration:20s]">
@@ -45,10 +73,10 @@ function Features() {
         className="container grid gap-6 py-16 md:gap-8 mx-auto"
       >
         <h2 className="font-bold text-[#7BCD00] mb-10 mx-auto text-center text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          Competências
+          <TextAnimate>Competências</TextAnimate>
         </h2>
 
-        <div className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-6 md:px-13 md:grid-cols-3 mx-auto">
+        <div ref={cardsRef} className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-6 md:px-13 md:grid-cols-3 mx-auto">
           {features.map(({ title, description, icon: Icon }, i) => (
             <div
               key={i}
