@@ -12,7 +12,7 @@ export function Projects() {
           <h2 className="mt-20 font-bold text-[#7BCD00] mb-10 mx-auto text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
             Últimos Projetos
           </h2>
-          <p className="text-2xl text-[#7BCD00] ">
+          <p className="text-2xl md:mx-40 -mt-12  text-[#7BCD00] ">
             Alguns dos projetos desenvolvidos pelo Greenleaf Studio, explorando
             diferentes áreas e desafios do desenvolvimento front-end.
           </p>
@@ -20,7 +20,7 @@ export function Projects() {
         {/* Cards */}
         <div
           id="card-sction"
-          className="grid mt-20 md:flex mx-auto gap-7 lg:gap-10 md:w-[90%] mb-15"
+          className="grid mt-20 md:flex mx-auto gap-7 lg:gap-10 md:w-[90%] mb-15 2xl:scale-110 2xl:ml-25"
         >
           {data.map((item) => (
             <div

@@ -42,13 +42,13 @@ function Features() {
       </Marquee>
       <section
         id="features"
-        className="container grid gap-6 py-16 md:gap-8  mx-auto"
+        className="container grid gap-6 py-16 md:gap-8 mx-auto"
       >
         <h2 className="font-bold text-[#7BCD00] mb-10 mx-auto text-center text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           Competências
         </h2>
 
-        <div className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-10 md:grid-cols-3 mx-auto">
+        <div className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-6 md:px-13 md:grid-cols-3 mx-auto">
           {features.map(({ title, description, icon: Icon }, i) => (
             <div
               key={i}
