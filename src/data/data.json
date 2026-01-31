@@ -5,6 +5,7 @@
     "description": "Site de venda de plantas amazônicas e outras variedades.",
     "image": "/projects/project-1.webp",
     "type": "E-commerce",
+    "route": "/encantoamazonico",
     "variant": "bg-green-900/50 w-28 h-6 rounded-full"
   },
   {
@@ -13,6 +14,7 @@
     "description": "Landing Page para o seguimento de advogados e aréa do direito.",
     "image": "/projects/project-3.webp",
     "type": "Landing Page",
+    "route": "/civix",
     "variant": "bg-yellow-900/50 w-28 h-6 rounded-full"
   },
   {
@@ -21,6 +23,7 @@
     "description": "Sistema Web desenvolvido para organizar gerenciamento de estoque variados.",
     "image": "/projects/project-2.webp",
     "type": "Sistema Web",
+    "route": "/medicgo",
     "variant": "bg-red-900/50 w-28 h-6 rounded-full"
   }
 ]

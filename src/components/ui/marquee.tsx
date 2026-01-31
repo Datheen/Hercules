@@ -46,7 +46,7 @@ export function Marquee({
     <div
       {...props}
       className={cn(
-        "group flex [gap:var(--gap)] overflow-hidden [--duration:40s] [--gap:0rem]",
+        "group flex gap-(--gap) overflow-hidden [--duration:40s] [--gap:0rem]",
         {
           "flex-row": !vertical,
           "flex-col": vertical,
@@ -62,8 +62,8 @@ export function Marquee({
             className={cn("flex shrink-0", {
               "animate-marquee flex-row": !vertical,
               "animate-marquee-vertical flex-col": vertical,
-              "group-hover:[animation-play-state:paused]": pauseOnHover,
-              "[animation-direction:reverse]": reverse,
+              "group-hover:paused": pauseOnHover,
+              "direction-[reverse]": reverse,
             })}
           >
             {children}

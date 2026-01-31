@@ -58,21 +58,21 @@ export function Hero() {
           <div id="ckris" className="relative md:mt-3 mt-26" ref={containerRef}>
             <img
               id="animar"
-              className="w-[71px] absolute right-20 top-2"
+              className="w-17.75 absolute right-20 top-2"
               src={angular}
             />
-            <img id="animar" className="w-[78px] absolute top-20" src={react} />
+            <img id="animar" className="w-19.5 absolute top-20" src={react} />
             <img
               id="animar"
-              className="w-[71px] absolute right-0 top-40"
+              className="w-17.75 absolute right-0 top-40"
               src={next}
             />
             <img
               id="animar"
-              className="w-[90px] absolute bottom-25"
+              className="w-22.5 absolute bottom-25"
               src={tailwind}
             />
-            <img className="w-[390px] px-2" src={ckris} />
+            <img className="w-97.5 px-2" src={ckris} />
           </div>
         </div>
       </div>

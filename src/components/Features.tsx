@@ -1,5 +1,5 @@
 import { Code2 as Code, Paintbrush, Rocket } from "lucide-react";
-import { Marquee } from "./ui/marquee";
+import { Marquee } from "@/components/ui/Marquee";
 import typescript from "@/assets/img/features/typescript.webp";
 import nodejs from "@/assets/img/features/nodejs.webp";
 import next from "@/assets/img/features/nextwide.webp";
@@ -86,7 +86,7 @@ function Features() {
               key={i}
               className="animated-box relative overflow-hidden rounded-lg border border-[#7BCD00] text-[#7BCD00] p-2"
             >
-              <div className="flex min-h-[180px] flex-col justify-start rounded-md p-6">
+              <div className="flex min-h-45 flex-col justify-start rounded-md p-6">
                 <Icon className="mb-3 h-8 w-8" />
                 <div className="space-y-2">
                   <h3 className="font-bold">{title}</h3>
