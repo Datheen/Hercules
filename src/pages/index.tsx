@@ -1,6 +1,5 @@
 import { ContactForm } from "@/components/ContactForm";
 import Features from "@/components/Features";
-
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 
@@ -10,7 +9,7 @@ export function Home() {
       <Hero />
       <Features />
       <Projects />
-      <ContactForm/>
+      <ContactForm />
     </>
   );
 }

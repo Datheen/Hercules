@@ -1,5 +1,5 @@
 import { Code2 as Code, Paintbrush, Rocket } from "lucide-react";
-import { Marquee } from "@/components/ui/Marquee";
+import { Marquee } from "@/components/ui/marquee";
 import typescript from "@/assets/img/features/typescript.webp";
 import nodejs from "@/assets/img/features/nodejs.webp";
 import next from "@/assets/img/features/nextwide.webp";
