@@ -9,10 +9,10 @@ export function Form() {
         id="title"
         className="text-white md:w-120 gap-y-5 flex flex-col pt-10 md:pt-0"
       >
-        <h2 className="text-4xl font-semibold bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent ">
+        <h2 className="text-4xl px-1 font-semibold bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent ">
           Compartilhe usa ideia!
         </h2>
-        <p className="text-lg text-white/70">
+        <p className="text-lg px-1 text-white/70">
           Deixe sua mensagem que em breve entraremos em contato com você.
         </p>
       </div>
