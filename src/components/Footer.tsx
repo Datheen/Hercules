@@ -3,7 +3,7 @@ import { AtomIcon } from "./ui/LogoIcon";
 export function Footer() {
   return (
     <footer className="bg-black rounded-t-4xl">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-8 mt-1 md:mb-0">
             <div className="flex items-center">
