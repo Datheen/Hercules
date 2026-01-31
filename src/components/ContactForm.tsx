@@ -7,7 +7,7 @@ import { Form } from "./ui/Form";
 
 export function ContactForm() {
   return (
-    <div className="w-full bg-[#0b1b25] h-auto pt-20">
+    <div className="w-full bg-[#0b1b25] h-auto md:pt-0 md:mb-20 2xl:scale-125 2xl:my-30 2xl:pt-30 overflow-hidden">
       <div
         id="container"
         className="max-w-360 px-4 pb-10 flex flex-col md:flex-row justify-center item mx-auto"

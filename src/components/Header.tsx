@@ -2,7 +2,7 @@ import { AtomIcon } from "./ui/LogoIcon";
 
 export function Header() {
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-0 ">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-0 2xl:scale-110 overflow-hidden ">
       <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-2.25 py-1.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">

@@ -1,4 +1,3 @@
-import { GridPattern } from "@/components/ui/grid-pattern";
 import { Code2 as Code, Paintbrush, Rocket } from "lucide-react";
 import { Marquee } from "./ui/marquee";
 import typescript from "@/assets/img/features/typescript.webp";
@@ -59,7 +58,7 @@ function Features() {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full 2xl:scale-116 overflow-hidden">
       <Marquee pauseOnHover className="[--duration:20s]">
         <div className="flex items-center gap-20 bg-black px-6 py-4">
           <img src={typescript} className="w-40 pb-2 ml-11" />

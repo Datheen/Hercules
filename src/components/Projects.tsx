@@ -1,11 +1,11 @@
 import data from "@/data/data.json";
 import { Star } from "./ui/Star";
 import { TextAnimate } from "@/components/ui/TextAnimate";
-import { GridPattern } from "./ui/grid-pattern";
+import { GridPattern } from "@/components/ui/GridPattern";
 
 export function Projects() {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto 2xl:scale-115 2xl:mt-30 mb-30 overflow-hidden">
       
       <div className="relative w-full overflow-hidden">
   <GridPattern/>

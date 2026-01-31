@@ -28,7 +28,7 @@ export function Hero() {
   return (
     <div
       id="hero-background"
-      className="bg-[url('/background.webp')] w-full bg-cover bg-center pb-40 mx-auto"
+      className="bg-[url('/background.webp')] w-full bg-cover bg-center pb-40 mx-auto 2xl:scale-130 2xl:mt-30 2xl:mb-20 "
     >
       <div id="hero-container" className="h-auto max-w-360 mx-auto px-4">
         <div

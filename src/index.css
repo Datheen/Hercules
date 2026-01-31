@@ -253,5 +253,6 @@
   body {
     @apply bg-background text-foreground;
     background-color: #0b1b25;
+    overflow-x: hidden;
     }
 }

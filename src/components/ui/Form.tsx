@@ -1,6 +1,6 @@
 import { AtSignIcon } from "./AtSignIcon";
-import { Button } from "./stateful-button";
-import { UserIcon } from "./user";
+import { Button } from "@/components/ui/StatefulButton";
+import { UserIcon } from "@/components/ui/UserIcon";
 
 export function Form() {
   return (
