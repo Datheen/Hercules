@@ -4,7 +4,7 @@ import { UserIcon } from "./user";
 
 export function Form() {
   return (
-    <div className="flex-col py-12">
+    <div className="flex-col py-12 md:py-0">
       <div
         id="title"
         className="text-white md:w-120 gap-y-5 flex flex-col pt-10 md:pt-0"
