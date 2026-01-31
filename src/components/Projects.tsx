@@ -1,10 +1,15 @@
 import data from "@/data/data.json";
 import { Star } from "./ui/Star";
 import { TextAnimate } from "@/components/ui/TextAnimate";
+import { GridPattern } from "./ui/grid-pattern";
 
 export function Projects() {
   return (
-    <div className="w-full bg-[#0b1b25] h-auto">
+    <div className="w-full h-auto">
+      
+      <div className="relative w-full overflow-hidden">
+  <GridPattern/>
+
       <div
         id="container-projects"
         className="max-w-360 flex flex-col px-4 mx-auto"
@@ -21,7 +26,7 @@ export function Projects() {
         {/* Cards */}
         <div
           id="card-sction"
-          className="grid mt-20 md:flex mx-auto gap-7 lg:gap-10 md:w-[90%] mb-15 2xl:scale-110 2xl:ml-25"
+          className="z-10 grid mt-20 md:flex mx-auto gap-7 lg:gap-10 md:w-[90%] mb-15 2xl:scale-110 2xl:ml-25"
         >
           {data.map((item) => (
             <div
@@ -63,6 +68,7 @@ export function Projects() {
               </div>
             </div>
           ))}
+        </div>
         </div>
         {/* Termina aqui */}
       </div>

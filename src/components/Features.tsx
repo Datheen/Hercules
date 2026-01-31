@@ -1,10 +1,11 @@
+import { GridPattern } from "@/components/ui/grid-pattern";
 import { Code2 as Code, Paintbrush, Rocket } from "lucide-react";
 import { Marquee } from "./ui/marquee";
 import typescript from "@/assets/img/features/typescript.webp";
 import nodejs from "@/assets/img/features/nodejs.webp";
 import next from "@/assets/img/features/nextwide.webp";
 import angularwide from "@/assets/img/features/angularwide.webp";
-import tailwindlogo from "@/assets/img/features/tailwindcsslogo.webp"
+import tailwindlogo from "@/assets/img/features/tailwindcsslogo.webp";
 import { TextAnimate } from "@/components/ui/TextAnimate";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -39,8 +40,8 @@ function Features() {
   const cardsRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const cards = cardsRef.current?.querySelectorAll('.animated-box');
-    
+    const cards = cardsRef.current?.querySelectorAll(".animated-box");
+
     if (cards) {
       gsap.from(cards, {
         opacity: 0,
@@ -51,14 +52,14 @@ function Features() {
         scrollTrigger: {
           trigger: cardsRef.current,
           start: "top 80%",
-          toggleActions: "play none none none"
-        }
+          toggleActions: "play none none none",
+        },
       });
     }
   }, []);
 
   return (
-    <div className="w-full bg-[#0b1b25]">
+    <div className="w-full">
       <Marquee pauseOnHover className="[--duration:20s]">
         <div className="flex items-center gap-20 bg-black px-6 py-4">
           <img src={typescript} className="w-40 pb-2 ml-11" />
@@ -68,6 +69,7 @@ function Features() {
           <img src={tailwindlogo} className="w-60 " />
         </div>
       </Marquee>
+
       <section
         id="features"
         className="container grid gap-6 py-16 md:gap-8 mx-auto"
@@ -76,7 +78,10 @@ function Features() {
           <TextAnimate>Competências</TextAnimate>
         </h2>
 
-        <div ref={cardsRef} className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-6 md:px-13 md:grid-cols-3 mx-auto">
+        <div
+          ref={cardsRef}
+          className=" grid justify-center gap-4 sm:grid-cols-2 md:max-w-360 px-6 md:px-13 md:grid-cols-3 mx-auto"
+        >
           {features.map(({ title, description, icon: Icon }, i) => (
             <div
               key={i}
