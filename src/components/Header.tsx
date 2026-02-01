@@ -34,7 +34,7 @@ export function Header() {
   }, [location.pathname]);
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-0 2xl:scale-110 overflow-hidden ">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-5 overflow-hidden ">
       <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-2.25 py-1.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -50,7 +50,7 @@ export function Header() {
           <div className="flex relative">
             <div
               ref={pillRef}
-              className="absolute bg-linear-to-r from-lime-400/80 to-green-700/80 py-2 px-4 w-18 rounded-full pointer-events-none"
+              className={location.pathname === "/" || location.pathname === "/sobre" ? "absolute bg-linear-to-r from-lime-400/80 to-green-700/80 py-2 px-4 w-18 rounded-full pointer-events-none" : "opacity-0"}
               style={{ height: "calc(100% - 0px)" }}
             />
             <div
@@ -61,7 +61,7 @@ export function Header() {
             >
               <span
                 className={
-                  location.pathname === "/" ? "text-white/80" : "text-zinc-900"
+                  location.pathname === "/" ? "text-white/80" : "text-zinc-900 hover:text-white "
                 }
               >
                 Início
@@ -71,13 +71,13 @@ export function Header() {
               ref={sobreRef}
               id="sobre"
               onClick={() => navigate("/sobre")}
-              className="relative py-2 px-4 rounded-full font-medium cursor-pointer transition-colors z-10"
+              className="relative py-2 px-4 rounded-full mr-2 font-medium cursor-pointer transition-colors z-10"
             >
               <span
                 className={
                   location.pathname === "/sobre"
                     ? "text-white/80"
-                    : "text-zinc-900"
+                    : "text-zinc-900 hover:text-white"
                 }
               >
                 Sobre

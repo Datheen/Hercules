@@ -46,7 +46,7 @@ export function MedicGo() {
               <div className="flex flex-col gap-2 md:flex-row md:gap-5">
                 <div className="flex gap-2">
                   <UserIcon />
-                  <p>Ckristian Felipe, Breynner Caldas e Jheyson</p>
+                  <p>Ckristian Felipe</p>
                 </div>
                 <div className="flex gap-2">
                   <Calendar />
