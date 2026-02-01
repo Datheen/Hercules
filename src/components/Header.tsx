@@ -1,6 +1,37 @@
 import { AtomIcon } from "./ui/LogoIcon";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 export function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const pillRef = useRef<HTMLDivElement>(null);
+  const inicioRef = useRef<HTMLDivElement>(null);
+  const sobreRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const targetRef = location.pathname === "/sobre" ? sobreRef : inicioRef;
+
+    if (pillRef.current && targetRef.current) {
+      const targetRect = targetRef.current.getBoundingClientRect();
+      const containerRect =
+        targetRef.current.parentElement?.getBoundingClientRect();
+
+      if (containerRect) {
+        const left = targetRect.left - containerRect.left;
+        const width = targetRect.offsetWidth;
+
+        gsap.to(pillRef.current, {
+          x: left,
+          width: width,
+          duration: 0.4,
+          ease: "power2.out",
+        });
+      }
+    }
+  }, [location.pathname]);
+
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-0 2xl:scale-110 overflow-hidden ">
       <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-2.25 py-1.5">
@@ -15,12 +46,41 @@ export function Header() {
             </p>
           </div>
 
-          <div className="flex">
-            <div className="bg-linear-to-r from-lime-400/80 to-green-700/80 py-2 px-4 rounded-full text-white/80 font-semibold">
-              <span>Início</span>
+          <div className="flex relative">
+            <div
+              ref={pillRef}
+              className="absolute bg-linear-to-r from-lime-400/80 to-green-700/80 py-2 px-4 w-18 rounded-full pointer-events-none"
+              style={{ height: "calc(100% - 0px)" }}
+            />
+            <div
+              ref={inicioRef}
+              id="inicio"
+              onClick={() => navigate("/")}
+              className="relative py-2 px-4 rounded-full font-semibold cursor-pointer transition-colors z-10"
+            >
+              <span
+                className={
+                  location.pathname === "/" ? "text-white/80" : "text-zinc-900"
+                }
+              >
+                Início
+              </span>
             </div>
-            <div className=" py-2 px-4 text-zinc-900 font-medium">
-              <span>Sobre</span>
+            <div
+              ref={sobreRef}
+              id="sobre"
+              onClick={() => navigate("/sobre")}
+              className="relative py-2 px-4 rounded-full font-medium cursor-pointer transition-colors z-10"
+            >
+              <span
+                className={
+                  location.pathname === "/sobre"
+                    ? "text-white/80"
+                    : "text-zinc-900"
+                }
+              >
+                Sobre
+              </span>
             </div>
             <div id="divider" className="w-0.5 bg-white/20"></div>
             <div className="py-2 px-4">
