@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
+
 export function Header() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,7 +21,7 @@ export function Header() {
 
       if (containerRect) {
         const left = targetRect.left - containerRect.left;
-        const width = targetRect.offsetWidth;
+        const width = targetRect.width;
 
         gsap.to(pillRef.current, {
           x: left,
@@ -102,7 +103,7 @@ export function Header() {
               </svg>
             </div>
 
-            <div className="py-2 px-4">
+            <div onClick={()=> window.location.href = "https://wa.me/5592985355192"} id="whatsapp" className="cursor-pointer py-2 px-4">
               <svg
                 className="w-6 h-6 mt-px -ml-1 text-zinc-900 dark:text-white"
                 aria-hidden="true"
