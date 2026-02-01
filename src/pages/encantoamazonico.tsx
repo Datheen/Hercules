@@ -7,6 +7,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { GridPattern } from "@/components/ui/GridPattern";
+import { Star } from "@/components/ui/Star";
 
 export function EncantoAmazonico() {
   useEffect(() => {
@@ -27,9 +28,13 @@ export function EncantoAmazonico() {
           <div id="meta" className="px-2 md:px-20 flex flex-col gap-4 mb-10">
             <div
               id="badge"
-              className="w-max h-10 bg-green-900/50 rounded-full px-4 flex items-center justify-center"
+              className="w-max h-10 bg-green-600/40 shadow-lg backdrop-blur-2xl rounded-full px-4 flex items-center justify-center"
             >
-              <p className=" font-medium">E-commerce</p>
+              <p className=" font-medium mr-2">E-commerce:</p> <Star />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
             </div>
             <h1 className="text-4xl md:text-5xl font-medium bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent">
               Encanto Amazônico

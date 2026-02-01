@@ -7,6 +7,9 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { GridPattern } from "@/components/ui/GridPattern";
+import { RiAngularjsFill } from "react-icons/ri";
+import { SiPostgresql } from "react-icons/si";
+import { Star } from "@/components/ui/Star";
 
 export function MedicGo() {
   useEffect(() => {
@@ -27,9 +30,13 @@ export function MedicGo() {
           <div id="meta" className="px-2 md:px-20 flex flex-col gap-4 mb-10">
             <div
               id="badge"
-              className="w-max h-10 bg-green-900/50 rounded-full px-4 flex items-center justify-center"
+              className="w-max h-10 bg-blue-800/40 shadow-lg backdrop-blur-2xl rounded-full px-4 flex items-center justify-center"
             >
-              <p className=" font-medium">E-commerce</p>
+              <p className=" font-medium mr-2">Sitema Web:</p> <Star />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
             </div>
             <h1 className="text-4xl md:text-5xl font-medium bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent">
               Medic Go
@@ -48,14 +55,14 @@ export function MedicGo() {
               </div>
             </div>
 
-            <div id="used-tec" className="flex gap-3">
+            <div id="used-tec" className="flex flex-wrap gap-3">
               <div
                 id="badge"
-                className="w-max h-10 bg-blue-900 z-2 rounded-full px-4 flex items-center justify-center"
+                className="w-max h-10 bg-red-800 z-2 rounded-full px-4 flex items-center justify-center"
               >
                 <p className="font-medium flex gap-1">
-                  <FaReact className="w-6 h-6" />
-                  React
+                  <RiAngularjsFill className="w-6 h-6" />
+                  Angular
                 </p>
               </div>
 
@@ -71,59 +78,45 @@ export function MedicGo() {
 
               <div
                 id="badge"
-                className="w-max h-10 bg-red-500/70 z-2 rounded-full px-4 flex items-center justify-center"
+                className="w-max h-10 bg-green-900 z-2 rounded-full px-4 flex items-center justify-center"
               >
                 <p className="font-medium flex gap-1">
-                  <FaFigma className="w-5 h-5 mt-px" />
-                  Figma
+                  <SiPostgresql className="w-5 h-5 mt-px" />
+                  PostgreSQL
                 </p>
               </div>
             </div>
             <div id="text-descript" className="text-lg font-normal">
-              <span className="font-medium">Encanto Amazônico</span> é um
-              projeto focado na valorização da natureza da Amazônia por meio de
-              um e-commerce moderno e funcional. A plataforma oferece a venda de
-              plantas amazônicas e outras variedades, unindo design limpo, boa
-              usabilidade e performance. O objetivo é conectar pessoas à
-              biodiversidade, promovendo sustentabilidade e uma experiência de
-              compra simples e confiável.
+              <p>
+                No<span className="font-medium"> Medic GO</span>, a pesquisa foi
+                pensada para ser rápida e prática, facilitando o dia a dia de
+                quem usa o sistema. Ela permite localizar produtos de forma
+                imediata por nome, código ou categoria, reduzindo o tempo de
+                busca, evitando erros operacionais e agilizando decisões como
+                reposição e conferência de estoque.
+              </p>
             </div>
           </div>
           <div
             id="project-screenshots"
             className="flex flex-col gap-y-15 md:px-20"
           >
-            <a href="/projects/project-1.webp" data-fancybox="gallery">
-              <Safari
-                url="www.encantoamazonico.com.br"
-                imageSrc="/projects/project-1.webp"
-              />
-            </a>
             <a
-              href="/projects/screenshot-project-1.webp"
+              href="/projects/screenshot-project-3.webp"
               data-fancybox="gallery"
             >
               <Safari
                 url="www.encantoamazonico.com.br"
-                imageSrc="/projects/screenshot-project-1.webp"
+                imageSrc="/projects/screenshot-project-3.webp"
               />
             </a>
             <a
-              href="/projects/screenshot-project-1A.webp"
+              href="/projects/screenshot-project-3A.webp"
               data-fancybox="gallery"
             >
               <Safari
                 url="www.encantoamazonico.com.br"
-                imageSrc="/projects/screenshot-project-1A.webp"
-              />
-            </a>
-            <a
-              href="/projects/screenshot-project-1B.webp"
-              data-fancybox="gallery"
-            >
-              <Safari
-                url="www.encantoamazonico.com.br"
-                imageSrc="/projects/screenshot-project-1B.webp"
+                imageSrc="/projects/screenshot-project-3A.webp"
               />
             </a>
           </div>

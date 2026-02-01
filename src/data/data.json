@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Civix Advocacia",
     "description": "Landing Page para o seguimento de advogados e aréa do direito.",
-    "image": "/projects/project-3.webp",
+    "image": "/projects/project-2.webp",
     "type": "Landing Page",
     "route": "/civix",
     "variant": "bg-yellow-900/50 w-28 h-6 rounded-full"
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Medic GO",
     "description": "Sistema Web desenvolvido para organizar gerenciamento de estoque variados.",
-    "image": "/projects/project-2.webp",
+    "image": "/projects/project-3.webp",
     "type": "Sistema Web",
     "route": "/medicgo",
     "variant": "bg-red-900/50 w-28 h-6 rounded-full"
