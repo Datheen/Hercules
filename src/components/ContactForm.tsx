@@ -4,8 +4,11 @@ import {
   TypingAnimation,
 } from "@/components/ui/terminal";
 import { Form } from "./ui/Form";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function ContactForm() {
+  const { t } = useLanguage();
+
   return (
     <div
       id="contato"
@@ -22,39 +25,39 @@ export function ContactForm() {
             </TypingAnimation>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Planejar estrutura geral
+              {t("✔ Planejar estrutura geral", "✔ Plan overall structure")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Criar repositório Git
+              {t("✔ Criar repositório Git", "✔ Create Git repository")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Iniciar projeto base
+              {t("✔ Iniciar projeto base", "✔ Initialize base project")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Configurar roteamento páginas
+              {t("✔ Configurar roteamento páginas", "✔ Configure page routing")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Construir layout responsivo
+              {t("✔ Construir layout responsivo", "✔ Build responsive layout")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Estilizar com CSS
+              {t("✔ Estilizar com CSS", "✔ Style with CSS")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Conectar API backend
+              {t("✔ Conectar API backend", "✔ Connect backend API")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Testar em dispositivos
+              {t("✔ Testar em dispositivos", "✔ Test on devices")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-green-500">
-              ✔ Fazer deploy produção
+              {t("✔ Fazer deploy produção", "✔ Deploy to production")}
             </AnimatedSpan>
 
             <AnimatedSpan className="text-blue-500">
@@ -63,7 +66,7 @@ export function ContactForm() {
             </AnimatedSpan>
 
             <TypingAnimation className="text-white/80">
-              Sucesso! Inicialização do projeto completa.
+              {t("Sucesso! Inicialização do projeto completa.", "Success! Project initialization complete.")}
             </TypingAnimation>
           </Terminal>
         </div>

@@ -1,7 +1,12 @@
 import AppRoutes from "./routes/AppRoutes";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 function App() {
-  return <AppRoutes />;
+  return (
+    <LanguageProvider>
+      <AppRoutes />
+    </LanguageProvider>
+  );
 }
 
 export default App;

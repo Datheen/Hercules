@@ -8,8 +8,10 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { GridPattern } from "@/components/ui/GridPattern";
 import { RiNextjsFill } from "react-icons/ri";
 import { Star } from "@/components/ui/Star";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Civix() {
+  const { t } = useLanguage();
   useEffect(() => {
     Fancybox.bind("[data-fancybox]", {});
 
@@ -30,7 +32,7 @@ export function Civix() {
               id="badge"
               className="w-max h-10 bg-zinc-800/40 shadow-lg backdrop-blur-2xl rounded-full px-4 flex items-center justify-center"
             >
-              <p className=" font-medium mr-2">Landing Page:</p> <Star />
+              <p className=" font-medium mr-2">{t("Landing Page:", "Landing Page:")}</p> <Star />
               <Star />
               <Star />
               <Star />
@@ -48,7 +50,7 @@ export function Civix() {
                 </div>
                 <div className="flex gap-2">
                   <Calendar />
-                  <p>14 de Agosto, 2025</p>
+                  <p>{t("14 de Agosto, 2025", "August 14, 2025")}</p>
                 </div>
               </div>
             </div>
@@ -85,13 +87,10 @@ export function Civix() {
               </div>
             </div>
             <div id="text-descript" className="text-lg font-normal">
-              <span className="font-medium">Civix Advocacia</span> é um site
-              institucional desenvolvido com Next.js e Tailwind CSS, pensado
-              para transmitir credibilidade, autoridade e profissionalismo desde
-              o primeiro acesso. O projeto foi construído com foco em alta
-              performance, carregamento rápido e excelente experiência do
-              usuário, utilizando componentes bem estruturados, tipografia clara
-              e um layout moderno e responsivo.
+              <span className="font-medium">Civix {t("Advocacia", "Law Firm")}</span> {t(
+                "é um site institucional desenvolvido com Next.js e Tailwind CSS, pensado para transmitir credibilidade, autoridade e profissionalismo desde o primeiro acesso. O projeto foi construído com foco em alta performance, carregamento rápido e excelente experiência do usuário, utilizando componentes bem estruturados, tipografia clara e um layout moderno e responsivo.",
+                "is an institutional website developed with Next.js and Tailwind CSS, designed to convey credibility, authority and professionalism from the first access. The project was built with a focus on high performance, fast loading and excellent user experience, using well-structured components, clear typography and a modern and responsive layout."
+              )}
             </div>
           </div>
           <div

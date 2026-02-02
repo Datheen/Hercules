@@ -1,8 +1,11 @@
 import usa from "@/assets/img/hero/usa.webp";
 import brazil from "@/assets/img/hero/brazil.webp";
 import { Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Language() {
+  const { setLanguage } = useLanguage();
+
   return (
     <div className="fab">
       <div
@@ -13,10 +16,10 @@ export function Language() {
         <Globe />
       </div>
 
-      <button id="english" className="btn btn-lg btn-circle">
+      <button id="english" onClick={() => setLanguage("en")} className="btn btn-lg btn-circle">
         <img className="rounded-full" src={usa} />
       </button>
-      <button id="portuguese" className="btn btn-lg btn-circle">
+      <button id="portuguese" onClick={() => setLanguage("pt")} className="btn btn-lg btn-circle">
         <img className="rounded-full" src={brazil} />
       </button>
     </div>

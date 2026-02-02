@@ -10,33 +10,41 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const features = [
-  {
-    title: "Clean Code (Código Limpo)",
-    description:
-      "Tenho uma mentalidade focada em código limpo, legível e sustentável. Busco soluções simples, bem estruturadas e fáceis de manter, sempre pensando na evolução do projeto, na colaboração em equipe e na qualidade a longo prazo.",
-    icon: Code,
-  },
-  {
-    title: "Front-end UX/UI",
-    description:
-      "Atuo com foco em excelência no front-end, criando interfaces modernas, consistentes e bem refinadas. Tenho atenção aos detalhes visuais, à experiência do usuário e à construção de componentes reutilizáveis que unem estética e funcionalidade.",
-    icon: Paintbrush,
-  },
-
-  {
-    title: "Performance",
-    description:
-      "Desenvolvo aplicações orientadas à performance, priorizando carregamento rápido, responsividade e otimizações reais. Trabalho com boas práticas para reduzir custo de renderização, otimizar assets e garantir uma experiência fluida em qualquer dispositivo.",
-    icon: Rocket,
-  },
-];
-
 function Features() {
   const cardsRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      title: t("Clean Code (Código Limpo)", "Clean Code"),
+      description: t(
+        "Tenho uma mentalidade focada em código limpo, legível e sustentável. Busco soluções simples, bem estruturadas e fáceis de manter, sempre pensando na evolução do projeto, na colaboração em equipe e na qualidade a longo prazo.",
+        "I have a mindset focused on clean, readable and sustainable code. I seek simple, well-structured and easy-to-maintain solutions, always thinking about project evolution, team collaboration and long-term quality."
+      ),
+      icon: Code,
+    },
+    {
+      title: t("Front-end UX/UI", "Front-end UX/UI"),
+      description: t(
+        "Atuo com foco em excelência no front-end, criando interfaces modernas, consistentes e bem refinadas. Tenho atenção aos detalhes visuais, à experiência do usuário e à construção de componentes reutilizáveis que unem estética e funcionalidade.",
+        "I work with a focus on front-end excellence, creating modern, consistent and well-refined interfaces. I pay attention to visual details, user experience and building reusable components that combine aesthetics and functionality."
+      ),
+      icon: Paintbrush,
+    },
+
+    {
+      title: t("Performance", "Performance"),
+      description: t(
+        "Desenvolvo aplicações orientadas à performance, priorizando carregamento rápido, responsividade e otimizações reais. Trabalho com boas práticas para reduzir custo de renderização, otimizar assets e garantir uma experiência fluida em qualquer dispositivo.",
+        "I develop performance-oriented applications, prioritizing fast loading, responsiveness and real optimizations. I work with best practices to reduce rendering costs, optimize assets and ensure a smooth experience on any device."
+      ),
+      icon: Rocket,
+    },
+  ];
 
   useGSAP(() => {
     const cards = cardsRef.current?.querySelectorAll(".animated-box");
@@ -74,7 +82,7 @@ function Features() {
         className="container grid gap-6 py-16 md:gap-8 mx-auto"
       >
         <h2 className="font-bold text-[#7BCD00] mb-10 mx-auto text-center text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          <TextAnimate>Competências</TextAnimate>
+          <TextAnimate>{t("Competências", "Skills")}</TextAnimate>
         </h2>
 
         <div

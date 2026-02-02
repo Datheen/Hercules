@@ -2,6 +2,7 @@ import { AtomIcon } from "./ui/LogoIcon";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Header() {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ export function Header() {
   const pillRef = useRef<HTMLDivElement>(null);
   const inicioRef = useRef<HTMLDivElement>(null);
   const sobreRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const targetRef = location.pathname === "/sobre" ? sobreRef : inicioRef;
@@ -69,7 +71,7 @@ export function Header() {
                     : "text-zinc-900 hover:text-white "
                 }
               >
-                Início
+                {t("Início", "Home")}
               </span>
             </div>
             <div
@@ -85,7 +87,7 @@ export function Header() {
                     : "text-zinc-900 hover:text-white"
                 }
               >
-                Sobre
+                {t("Sobre", "About")}
               </span>
             </div>
             <div id="divider" className="w-0.5 bg-white/20"></div>

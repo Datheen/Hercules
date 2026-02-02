@@ -1,6 +1,9 @@
 import { AtomIcon } from "./ui/LogoIcon";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-black rounded-t-4xl">
       <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
@@ -16,7 +19,7 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-heading text-[#7BCD00] uppercase">
-                Recursos
+                {t("Recursos", "Resources")}
               </h2>
               <ul className="text-white font-medium">
                 <li className="mb-4">
@@ -36,7 +39,7 @@ export function Footer() {
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-heading text-[#7BCD00] uppercase">
-                Conectar e seguir
+                {t("Conectar e seguir", "Connect and follow")}
               </h2>
               <ul className="text-white font-medium">
                 <li className="mb-4">
@@ -56,7 +59,7 @@ export function Footer() {
         <hr className="my-6 border-default sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-white sm:text-center">
-            © 2026 Ckristian Dev - Todos direitos reservados.
+            {t("© 2026 Ckristian Dev - Todos direitos reservados.", "© 2026 Ckristian Dev - All rights reserved.")}
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a href="https://www.facebook.com" className="text-body hover:text-heading">

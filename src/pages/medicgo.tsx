@@ -8,8 +8,10 @@ import { GridPattern } from "@/components/ui/GridPattern";
 import { RiAngularjsFill } from "react-icons/ri";
 import { SiPostgresql } from "react-icons/si";
 import { Star } from "@/components/ui/Star";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function MedicGo() {
+  const { t } = useLanguage();
   useEffect(() => {
     Fancybox.bind("[data-fancybox]", {});
 
@@ -30,7 +32,7 @@ export function MedicGo() {
               id="badge"
               className="w-max h-10 bg-blue-800/40 shadow-lg backdrop-blur-2xl rounded-full px-4 flex items-center justify-center"
             >
-              <p className=" font-medium mr-2">Sitema Web:</p> <Star />
+              <p className=" font-medium mr-2">{t("Sitema Web:", "Web System:")}</p> <Star />
               <Star />
               <Star />
               <Star />
@@ -48,7 +50,7 @@ export function MedicGo() {
                 </div>
                 <div className="flex gap-2">
                   <Calendar />
-                  <p>2 de Dezembro, 2025</p>
+                  <p>{t("2 de Dezembro, 2025", "December 2, 2025")}</p>
                 </div>
               </div>
             </div>
@@ -86,12 +88,10 @@ export function MedicGo() {
             </div>
             <div id="text-descript" className="text-lg font-normal">
               <p>
-                No<span className="font-medium"> Medic GO</span>, a pesquisa foi
-                pensada para ser rápida e prática, facilitando o dia a dia de
-                quem usa o sistema. Ela permite localizar produtos de forma
-                imediata por nome, código ou categoria, reduzindo o tempo de
-                busca, evitando erros operacionais e agilizando decisões como
-                reposição e conferência de estoque.
+                {t("No", "In")}<span className="font-medium"> Medic GO</span>, {t(
+                  "a pesquisa foi pensada para ser rápida e prática, facilitando o dia a dia de quem usa o sistema. Ela permite localizar produtos de forma imediata por nome, código ou categoria, reduzindo o tempo de busca, evitando erros operacionais e agilizando decisões como reposição e conferência de estoque.",
+                  "the search was designed to be fast and practical, facilitating the day-to-day of those who use the system. It allows you to locate products immediately by name, code or category, reducing search time, avoiding operational errors and speeding up decisions such as replacement and inventory checking."
+                )}
               </p>
             </div>
           </div>

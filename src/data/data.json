@@ -1,28 +1,55 @@
 [
   {
     "id": 1,
-    "title": "Encanto Amazônico",
-    "description": "Site de venda de plantas amazônicas e outras variedades.",
+    "title": {
+      "pt": "Encanto Amazônico",
+      "en": "Amazonian Charm"
+    },
+    "description": {
+      "pt": "Site de venda de plantas amazônicas e outras variedades.",
+      "en": "Website for selling Amazonian plants and other varieties."
+    },
     "image": "/projects/project-1.webp",
-    "type": "E-commerce",
+    "type": {
+      "pt": "E-commerce",
+      "en": "E-commerce"
+    },
     "route": "/encantoamazonico",
     "variant": "bg-green-900/50 w-28 h-6 rounded-full"
   },
   {
     "id": 2,
-    "title": "Civix Advocacia",
-    "description": "Landing Page para o seguimento de advogados e aréa do direito.",
+    "title": {
+      "pt": "Civix Advocacia",
+      "en": "Civix Law Firm"
+    },
+    "description": {
+      "pt": "Landing Page para o seguimento de advogados e aréa do direito.",
+      "en": "Landing Page for lawyers and legal sector."
+    },
     "image": "/projects/project-2.webp",
-    "type": "Landing Page",
+    "type": {
+      "pt": "Landing Page",
+      "en": "Landing Page"
+    },
     "route": "/civix",
     "variant": "bg-yellow-900/50 w-28 h-6 rounded-full"
   },
   {
     "id": 3,
-    "title": "Medic GO",
-    "description": "Sistema Web desenvolvido para organizar gerenciamento de estoque variados.",
+    "title": {
+      "pt": "Medic GO",
+      "en": "Medic GO"
+    },
+    "description": {
+      "pt": "Sistema Web desenvolvido para organizar gerenciamento de estoque variados.",
+      "en": "Web System developed to organize various inventory management."
+    },
     "image": "/projects/project-3.webp",
-    "type": "Sistema Web",
+    "type": {
+      "pt": "Sistema Web",
+      "en": "Web System"
+    },
     "route": "/medicgo",
     "variant": "bg-red-900/50 w-28 h-6 rounded-full"
   }

@@ -8,8 +8,10 @@ import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { GridPattern } from "@/components/ui/GridPattern";
 import { Star } from "@/components/ui/Star";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function EncantoAmazonico() {
+  const { t } = useLanguage();
   useEffect(() => {
     Fancybox.bind("[data-fancybox]", {});
 
@@ -30,14 +32,14 @@ export function EncantoAmazonico() {
               id="badge"
               className="w-max h-10 bg-green-600/40 shadow-lg backdrop-blur-2xl rounded-full px-4 flex items-center justify-center"
             >
-              <p className=" font-medium mr-2">E-commerce:</p> <Star />
+              <p className=" font-medium mr-2">{t("E-commerce:", "E-commerce:")}</p> <Star />
               <Star />
               <Star />
               <Star />
               <Star />
             </div>
             <h1 className="text-4xl md:text-5xl font-medium bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent">
-              Encanto Amazônico
+              {t("Encanto Amazônico", "Amazonian Charm")}
             </h1>
 
             <div className="flex">
@@ -48,7 +50,7 @@ export function EncantoAmazonico() {
                 </div>
                 <div className="flex gap-2">
                   <Calendar />
-                  <p>2 de Dezembro, 2025</p>
+                  <p>{t("2 de Dezembro, 2025", "December 2, 2025")}</p>
                 </div>
               </div>
             </div>
@@ -85,13 +87,10 @@ export function EncantoAmazonico() {
               </div>
             </div>
             <div id="text-descript" className="text-lg font-normal">
-              <span className="font-medium">Encanto Amazônico</span> é um
-              projeto focado na valorização da natureza da Amazônia por meio de
-              um e-commerce moderno e funcional. A plataforma oferece a venda de
-              plantas amazônicas e outras variedades, unindo design limpo, boa
-              usabilidade e performance. O objetivo é conectar pessoas à
-              biodiversidade, promovendo sustentabilidade e uma experiência de
-              compra simples e confiável.
+              <span className="font-medium">{t("Encanto Amazônico", "Amazonian Charm")}</span> {t(
+                "é um projeto focado na valorização da natureza da Amazônia por meio de um e-commerce moderno e funcional. A plataforma oferece a venda de plantas amazônicas e outras variedades, unindo design limpo, boa usabilidade e performance. O objetivo é conectar pessoas à biodiversidade, promovendo sustentabilidade e uma experiência de compra simples e confiável.",
+                "is a project focused on valuing the nature of the Amazon through a modern and functional e-commerce. The platform offers the sale of Amazonian plants and other varieties, combining clean design, good usability and performance. The goal is to connect people to biodiversity, promoting sustainability and a simple and reliable shopping experience."
+              )}
             </div>
           </div>
           <div

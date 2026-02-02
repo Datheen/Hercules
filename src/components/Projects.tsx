@@ -3,19 +3,30 @@ import { Star } from "./ui/Star";
 import { TextAnimate } from "@/components/ui/TextAnimate";
 import { GridPattern } from "@/components/ui/GridPattern";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 type Project = {
   id: number;
-  title: string;
-  description: string;
+  title: {
+    pt: string;
+    en: string;
+  };
+  description: {
+    pt: string;
+    en: string;
+  };
   image: string;
   route: string;
-  type: string;
+  type: {
+    pt: string;
+    en: string;
+  };
   variant: string;
 };
 
 export function Projects() {
   const data = dataJson as Project[];
+  const { t, language } = useLanguage();
   return (
     <div className="w-full h-auto 2xl:scale-115 2xl:mt-30 mb-30 overflow-hidden">
       <div className="relative w-full overflow-hidden">
@@ -27,13 +38,14 @@ export function Projects() {
         >
           <div className=" md:px-20 text-center flex flex-col gap-y-10">
             <h2 className="mt-20 font-bold text-[#7BCD00] mb-10 mx-auto text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-              <TextAnimate>Últimos Projetos</TextAnimate>
+              <TextAnimate>{t("Últimos Projetos", "Latest Projects")}</TextAnimate>
             </h2>
             <p className="text-2xl md:mx-40 -mt-12  text-[#7BCD00] ">
               <TextAnimate>
-                Alguns dos projetos desenvolvidos pelo Greenleaf Studio,
-                explorando diferentes áreas e desafios do desenvolvimento
-                front-end.
+                {t(
+                  "Alguns dos projetos desenvolvidos pelo Greenleaf Studio, explorando diferentes áreas e desafios do desenvolvimento front-end.",
+                  "Some of the projects developed by Greenleaf Studio, exploring different areas and challenges of front-end development."
+                )}
               </TextAnimate>
             </p>
           </div>
@@ -61,7 +73,7 @@ export function Projects() {
                     <div className="mt-3 flex gap-2" id="badges">
                       <div className={item.variant}>
                         <span className="flex items-center justify-center text-white/90">
-                          {item.type}
+                          {item.type[language]}
                         </span>
                       </div>
                       <div className="bg-zinc-900/30 w-34 h-6 rounded-full">
@@ -77,10 +89,10 @@ export function Projects() {
                       </div>
                     </div>
                     <h1 className="text-white/90 font-medium text-2xl mt-3 hover:text-[#7BCD00] hover:cursor-pointer">
-                      {item.title}
+                      {item.title[language]}
                     </h1>
                     <p className="text-white/70 text-sm mt-2">
-                      {item.description}
+                      {item.description[language]}
                     </p>
                   </div>
                 </div>
