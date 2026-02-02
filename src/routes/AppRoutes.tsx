@@ -11,6 +11,7 @@ import { Header } from "@/components/Header";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Loading } from "@/components/Loading";
 import { Language } from "@/components/Language";
+import { WordRotate } from "@/components/ui/word-rotate";
 
 export default function AppRoutes() {
   const [loading, setLoading] = useState(true);
@@ -27,8 +28,9 @@ export default function AppRoutes() {
     <BrowserRouter>
       {loading && (
         <div className="fixed inset-0 z-100 flex flex-col items-center text-white justify-center bg-black">
-          <div className="mb-20">
-            <h1>Idiomas / Language</h1>
+          <div className="text-3xl mb-30 font-medium -mt-20">
+            {" "}
+            <WordRotate words={["Welcome", "Bem-vindo"]} />
           </div>
           <Loading />
         </div>
