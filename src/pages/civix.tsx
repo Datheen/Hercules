@@ -3,8 +3,6 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { Fancybox } from "@fancyapps/ui";
 import { useEffect } from "react";
 import { Safari } from "@/components/ui/safari";
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GridPattern } from "@/components/ui/GridPattern";
@@ -32,7 +30,11 @@ export function Civix() {
               id="badge"
               className="w-max h-10 bg-zinc-800/40 shadow-lg backdrop-blur-2xl rounded-full px-4 flex items-center justify-center"
             >
-              <p className=" font-medium mr-2">Landing Page:</p> <Star/><Star/><Star/><Star/><Star/>
+              <p className=" font-medium mr-2">Landing Page:</p> <Star />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
             </div>
             <h1 className="text-4xl md:text-5xl font-medium bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent">
               Civix
