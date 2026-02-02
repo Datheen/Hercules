@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-
 export function Header() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -35,7 +34,7 @@ export function Header() {
 
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-100 w-[95%] max-w-360 lg:px-20 2xl:px-5 overflow-hidden ">
-      <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/5 px-2.25 py-1.5">
+      <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/20 px-2.25 py-1.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="bg-linear-to-r from-lime-400/80 to-green-700/80 rounded-full p-1">
@@ -50,7 +49,11 @@ export function Header() {
           <div className="flex relative">
             <div
               ref={pillRef}
-              className={location.pathname === "/" || location.pathname === "/sobre" ? "absolute bg-linear-to-r from-lime-400/80 to-green-700/80 py-2 px-4 w-18 rounded-full pointer-events-none" : "opacity-0"}
+              className={
+                location.pathname === "/" || location.pathname === "/sobre"
+                  ? "absolute bg-linear-to-b from-lime-400/80 to-green-700/80 py-2 px-4 w-18 rounded-full pointer-events-none"
+                  : "opacity-0"
+              }
               style={{ height: "calc(100% - 0px)" }}
             />
             <div
@@ -61,7 +64,9 @@ export function Header() {
             >
               <span
                 className={
-                  location.pathname === "/" ? "text-white/80" : "text-zinc-900 hover:text-white "
+                  location.pathname === "/"
+                    ? "text-white/80"
+                    : "text-zinc-900 hover:text-white "
                 }
               >
                 Início
@@ -103,7 +108,13 @@ export function Header() {
               </svg>
             </div>
 
-            <div onClick={()=> window.location.href = "https://wa.me/5592985355192"} id="whatsapp" className="cursor-pointer py-2 px-4">
+            <div
+              onClick={() =>
+                (window.location.href = "https://wa.me/5592985355192")
+              }
+              id="whatsapp"
+              className="cursor-pointer py-2 px-4"
+            >
               <svg
                 className="w-6 h-6 mt-px -ml-1 text-zinc-900 dark:text-white"
                 aria-hidden="true"

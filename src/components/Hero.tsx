@@ -47,10 +47,26 @@ export function Hero() {
               id="CTA"
               className="flex gap-5 items-center justify-center md:justify-start mt-6"
             >
-              <ButtonAnim className="rounded-full bg-linear-to-r from-green-700 to-lime-400 h-12 text-white/80 font-semibold cursor-pointer opacity-80 hover:opacity-100 ">
+              <ButtonAnim
+                onClick={() =>
+                  document.getElementById("contato")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+                className="rounded-full bg-linear-to-t from-green-700 to-lime-400 h-12 text-white/80 font-semibold cursor-pointer opacity-80 hover:opacity-100 "
+              >
                 Contato
               </ButtonAnim>
-              <ButtonAnim className="rounded-full bg-linear-to-r from-lime-400 to-green-700 h-12 text-white/80 font-semibold cursor-pointer opacity-80 hover:opacity-100 ">
+              <ButtonAnim
+                onClick={() =>
+                  document.getElementById("features")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+                className="rounded-full bg-linear-to-b from-lime-400 to-green-700 h-12 text-white/80 font-semibold cursor-pointer opacity-80 hover:opacity-100 "
+              >
                 Ver mais
               </ButtonAnim>
             </div>

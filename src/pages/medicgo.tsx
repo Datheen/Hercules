@@ -4,8 +4,6 @@ import { Fancybox } from "@fancyapps/ui";
 import { useEffect } from "react";
 import { Safari } from "@/components/ui/safari";
 import { BiLogoTypescript } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
 import { GridPattern } from "@/components/ui/GridPattern";
 import { RiAngularjsFill } from "react-icons/ri";
 import { SiPostgresql } from "react-icons/si";
@@ -39,7 +37,7 @@ export function MedicGo() {
               <Star />
             </div>
             <h1 className="text-4xl md:text-5xl font-medium bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent">
-              Medic Go
+              Medic GO
             </h1>
 
             <div className="flex">
