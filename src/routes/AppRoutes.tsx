@@ -10,10 +10,10 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Loading } from "@/components/Loading";
+import { Language } from "@/components/Language";
 
 export default function AppRoutes() {
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -41,7 +41,7 @@ export default function AppRoutes() {
         <Route path="/medicgo" element={<MedicGo />} />
         <Route path="/sobre" element={<Sobre />} />
       </Routes>
-
+      <Language />
       <Footer />
     </BrowserRouter>
   );
