@@ -18,7 +18,7 @@ export default function AppRoutes() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,14 +26,16 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       {loading && (
-        <div className="fixed inset-0 z-100 flex items-center justify-center bg-black">
-          <Loading className="text-white" />
+        <div className="fixed inset-0 z-100 flex flex-col items-center text-white justify-center bg-black">
+          <div className="mb-20">
+            <h1>Idiomas / Language</h1>
+          </div>
+          <Loading />
         </div>
       )}
 
       <ScrollToTop />
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/encantoamazonico" element={<EncantoAmazonico />} />

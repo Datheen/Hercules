@@ -10,7 +10,7 @@ export function Sobre() {
   return (
     <div
       id="container"
-      className="max-w-360 h-max px-2 md:px-30 flex flex-col justify-center items-center mx-auto mb-10 mt-25"
+      className="max-w-360 h-max px-2 md:px-30 flex flex-col justify-center items-center mx-auto mb-10 pt-25"
     >
       <div className="md:ml-18 flex flex-col md:flex-row items-center text-white font-medium mb-10">
         <img className="w-70 rounded-full" src={dev} />

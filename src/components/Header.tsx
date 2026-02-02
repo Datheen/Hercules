@@ -10,7 +10,7 @@ export function Header() {
   const pillRef = useRef<HTMLDivElement>(null);
   const inicioRef = useRef<HTMLDivElement>(null);
   const sobreRef = useRef<HTMLDivElement>(null);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   useEffect(() => {
     const targetRef = location.pathname === "/sobre" ? sobreRef : inicioRef;
@@ -32,7 +32,7 @@ export function Header() {
         });
       }
     }
-  }, [location.pathname]);
+  }, [location.pathname, language]);
 
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-99 w-[95%] max-w-360 lg:px-20 2xl:px-5 overflow-hidden ">
@@ -48,7 +48,7 @@ export function Header() {
             </p>
           </div>
 
-          <div className="flex relative">
+          <div id="pill" className="flex relative">
             <div
               ref={pillRef}
               className={

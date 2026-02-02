@@ -104,7 +104,7 @@ export function MedicGo() {
               data-fancybox="gallery"
             >
               <Safari
-                url="www.encantoamazonico.com.br"
+                url="www.medicgo.app"
                 imageSrc="/projects/screenshot-project-3.webp"
               />
             </a>
@@ -113,7 +113,7 @@ export function MedicGo() {
               data-fancybox="gallery"
             >
               <Safari
-                url="www.encantoamazonico.com.br"
+                url="www.medicgo.app"
                 imageSrc="/projects/screenshot-project-3A.webp"
               />
             </a>
