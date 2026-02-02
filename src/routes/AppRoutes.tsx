@@ -14,15 +14,19 @@ import { Loading } from "@/components/Loading";
 export default function AppRoutes() {
   const [loading, setLoading] = useState(true);
 
-  // Loader só no primeiro carregamento
+
   useEffect(() => {
-    setLoading(false);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <BrowserRouter>
       {loading && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black">
+        <div className="fixed inset-0 z-100 flex items-center justify-center bg-black">
           <Loading className="text-white" />
         </div>
       )}
