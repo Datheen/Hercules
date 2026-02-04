@@ -76,7 +76,7 @@ export function Hero() {
           <div id="ckris" className="relative md:mt-3 mt-26" ref={containerRef}>
             <img
               id="animar"
-              className="w-17.75 absolute right-20 top-2"
+              className="w-17.75 absolute right-15 top-2"
               src={angular}
             />
             <img id="animar" className="w-19.5 absolute top-20" src={react} />
