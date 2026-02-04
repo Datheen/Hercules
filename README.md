@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# Portfólio Pessoal — Front-end Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém meu **portfólio pessoal**, desenvolvido para apresentar meus projetos, habilidades técnicas e minha evolução como desenvolvedor Front-end.  
+O foco do projeto é **performance, animações modernas, UI refinada e código limpo**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Visão Geral
 
-## React Compiler
+O portfólio foi construído como uma **SPA (Single Page Application)**, com navegação fluida, transições suaves e componentes reutilizáveis.  
+Cada seção foi pensada para destacar tanto **design** quanto **engenharia de software**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Stack Principal
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**
+- **TypeScript**
+- **Bun**
+- **Vite**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🎨 UI, Animações & Experiência
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Aceternity UI** — componentes modernos e estilizados
+- **Kokonut UI** — base visual e elementos reutilizáveis
+- **Magic UI** — efeitos visuais e interações avançadas
+- **Framer Motion** — animações declarativas e transições de rota
+- **GSAP** — animações complexas e controle fino de timeline
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧭 Navegação
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React Router DOM**
+  - Rotas bem definidas
+  - Scroll controlado entre páginas
+  - Estrutura escalável para novos projetos
+
+---
+
+## ⚡ Performance
+
+- Build ultrarrápido com **Bun + Vite**
+- Code splitting automático
+- Componentização otimizada
+- Animações performáticas sem comprometer UX
+
+---
+
+## ✨ Funcionalidades
+
+- SPA moderna e responsiva
+- Animações suaves e bem integradas
+- Layout adaptável para mobile, tablet e desktop
+- Código tipado e organizado
+- Estrutura preparada para crescimento
+
+---
+
+## ▶️ Como executar localmente
+
+```bash
+bun install
+bun run dev
