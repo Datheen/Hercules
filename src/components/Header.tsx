@@ -54,7 +54,7 @@ export function Header() {
               className={
                 location.pathname === "/" || location.pathname === "/sobre"
                   ? "absolute bg-linear-to-b from-lime-400/80 to-green-700/80 py-2 px-4 w-18 rounded-full pointer-events-none"
-                  : "opacity-0"
+                  : "hidden"
               }
               style={{ height: "calc(100% - 0px)" }}
             />

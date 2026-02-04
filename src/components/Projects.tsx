@@ -52,7 +52,7 @@ export function Projects() {
           {/* Cards */}
           <div
             id="card-sction"
-            className="z-10 grid mt-20 md:flex mx-auto gap-7 lg:gap-10 md:w-[90%] mb-15 2xl:scale-110 2xl:ml-25"
+            className="z-10 grid grid-cols-1 md:grid-cols-3 place-items-center mt-20 mx-auto gap-7 lg:gap-10 mb-15 2xl:scale-110 2xl:ml-25"
           >
             {data.map((item) => (
               <Link key={item.id} to={item.route} className="group block">
