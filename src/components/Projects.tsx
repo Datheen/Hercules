@@ -59,7 +59,7 @@ export function Projects() {
                 <div
                   id="card"
                   key={item.id}
-                  className="group shadow-2xl rounded-4xl overflow-hidden active:scale-80 transition-all duration-700 bg-cover bg-center h-92.5 w-95"
+                  className="group shadow-2xl rounded-xl border-lime-400 border overflow-hidden active:scale-80 transition-all duration-700 bg-cover bg-center h-92.5 w-95"
                   style={{ backgroundImage: `url(${item.image})` }}
                 >
                   <div className="h-[56%]">

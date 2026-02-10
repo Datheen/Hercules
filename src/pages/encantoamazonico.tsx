@@ -20,12 +20,12 @@ export function EncantoAmazonico() {
     };
   }, []);
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="relative w-full overflow-hidden z-1">
         <GridPattern />
         <div
           id="container"
-          className=" max-w-360 z-20 mx-auto px-4 h-auto mt-25 text-white mb-10 md:mb-20"
+          className=" max-w-360 z-20 mx-auto px-4 h-auto mt-25 text-white mb-10 md:mb-20 2xl:scale-120 2xl:pt-100 2xl:pb-100"
         >
           <div id="meta" className="px-2 md:px-20 flex flex-col gap-4 mb-10">
             <div

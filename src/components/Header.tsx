@@ -21,8 +21,9 @@ export function Header() {
         targetRef.current.parentElement?.getBoundingClientRect();
 
       if (containerRect) {
-        const left = targetRect.left - containerRect.left;
-        const width = targetRect.width;
+        const scale = window.innerWidth >= 1536 ? 1.2 : 1;
+        const left = (targetRect.left - containerRect.left) / scale;
+        const width = targetRect.width / scale;
 
         gsap.to(pillRef.current, {
           x: left,
@@ -35,7 +36,7 @@ export function Header() {
   }, [location.pathname, language]);
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-99 w-[95%] max-w-360 lg:px-20 2xl:px-5 overflow-hidden ">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-99 w-[95%] max-w-360 lg:px-20 2xl:scale-120 2xl:px-20">
       <div className="bg-white/40 backdrop-blur-lg rounded-full shadow-md border border-white/20 px-2.25 py-1.5">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
