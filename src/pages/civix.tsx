@@ -24,7 +24,7 @@ export function Civix() {
         <GridPattern />
         <div
           id="container"
-          className=" max-w-360 z-20 mx-auto px-4 h-auto mt-25 text-white mb-10 md:mb-20 2xl:scale-120 2xl:py-30"
+          className=" max-w-360 z-20 mx-auto px-4 h-auto mt-25 text-white mb-10 md:mb-20 2xl:scale-120 2xl:py-43"
         >
           <div id="meta" className="px-2 md:px-20 flex flex-col gap-4 mb-10">
             <div
@@ -98,7 +98,7 @@ export function Civix() {
               </span>{" "}
               {t(
                 "foi desenvolvido como uma landing page estratégica, com foco em autoridade, clareza e conversão. A proposta era transmitir credibilidade e profissionalismo desde o primeiro contato, mantendo uma navegação simples, direta e objetiva.",
-                "is an institutional website developed with Next.js and Tailwind CSS, designed to convey credibility, authority and professionalism from the first access. The project was built with a focus on high performance, fast loading and excellent user experience, using well-structured components, clear typography and a modern and responsive layout."
+                "was developed as a strategic landing page, focused on authority, clarity and conversion. The purpose was to convey credibility and professionalism from the first contact, maintaining simple, direct and objective navigation."
               )}
             </div>
             
@@ -136,49 +136,59 @@ export function Civix() {
 
   <section className="space-y-4 leading-relaxed text-white/90">
     <p>
-      O site da <strong>Civix Advocacia</strong> foi desenvolvido como uma
-      landing page estratégica, com foco em autoridade, clareza e conversão.
-      A proposta foi transmitir credibilidade desde o primeiro contato,
-      mantendo uma navegação simples, direta e objetiva.
+      {t(
+        "O site da",
+        "The website of"
+      )} <strong>Civix {t("Advocacia", "Law Firm")}</strong> {t(
+        "foi desenvolvido como uma landing page estratégica, com foco em autoridade, clareza e conversão. A proposta foi transmitir credibilidade desde o primeiro contato, mantendo uma navegação simples, direta e objetiva.",
+        "was developed as a strategic landing page, focused on authority, clarity and conversion. The purpose was to convey credibility from the first contact, maintaining simple, direct and objective navigation."
+      )}
     </p>
 
     <p>
-      A aplicação foi construída em <strong>Next.js</strong>, priorizando
-      performance, SEO e carregamento rápido — fatores essenciais para
-      fortalecer a presença digital do escritório.
+      {t(
+        "A aplicação foi construída em",
+        "The application was built with"
+      )} <strong>Next.js</strong>, {t(
+        "priorizando performance, SEO e carregamento rápido — fatores essenciais para fortalecer a presença digital do escritório.",
+        "prioritizing performance, SEO and fast loading — essential factors to strengthen the firm's digital presence."
+      )}
     </p>
   </section>
 
   <section className="space-y-6">
-    <h3 className="text-2xl font-semibold">Processo de desenvolvimento</h3>
+    <h3 className="text-2xl font-semibold">{t("Processo de desenvolvimento", "Development Process")}</h3>
 
     <div className="grid gap-8 md:grid-cols-2">
       <div className="rounded-xl border border-lime-400 p-6 space-y-3">
-        <h4 className="text-lg font-semibold">UI/UX personalizado</h4>
+        <h4 className="text-lg font-semibold">{t("UI/UX personalizado", "Custom UI/UX")}</h4>
         <p className="text-white/90 leading-relaxed">
-          A interface foi desenvolvida do zero, sem bibliotecas prontas de
-          componentes. Cada seção foi estruturada com foco em hierarquia
-          visual, leitura fluida e chamadas de ação estratégicas.
+          {t(
+            "A interface foi desenvolvida do zero, sem bibliotecas prontas de componentes. Cada seção foi estruturada com foco em hierarquia visual, leitura fluida e chamadas de ação estratégicas.",
+            "The interface was developed from scratch, without ready-made component libraries. Each section was structured with a focus on visual hierarchy, fluid reading and strategic calls to action."
+          )}
         </p>
       </div>
 
       <div className="rounded-xl border border-lime-400 p-6 space-y-3">
-        <h4 className="text-lg font-semibold">Design no Figma</h4>
+        <h4 className="text-lg font-semibold">{t("Design no Figma", "Figma Design")}</h4>
         <p className="text-white/90 leading-relaxed">
-          O layout foi prototipado previamente no Figma, garantindo
-          consistência em tipografia, espaçamentos e identidade visual,
-          facilitando uma implementação fiel ao design.
+          {t(
+            "O layout foi prototipado previamente no Figma, garantindo consistência em tipografia, espaçamentos e identidade visual, facilitando uma implementação fiel ao design.",
+            "The layout was previously prototyped in Figma, ensuring consistency in typography, spacing and visual identity, facilitating a faithful implementation of the design."
+          )}
         </p>
       </div>
     </div>
   </section>
 
   <section className="space-y-4 leading-relaxed text-white/90">
-    <h3 className="text-2xl font-semibold">Resultado final</h3>
+    <h3 className="text-2xl font-semibold">{t("Resultado final", "Final Result")}</h3>
     <p>
-      O resultado é uma landing page moderna, leve e funcional,
-      projetada para transmitir confiança e facilitar o contato
-      com potenciais clientes.
+      {t(
+        "O resultado é uma landing page moderna, leve e funcional, projetada para transmitir confiança e facilitar o contato com potenciais clientes.",
+        "The result is a modern, lightweight and functional landing page, designed to convey trust and facilitate contact with potential clients."
+      )}
     </p>
   </section>
 </div>

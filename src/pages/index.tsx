@@ -7,7 +7,6 @@ export function Home() {
   return (
     <>
       <Hero />
-
       <Features />
       <Projects />
       <ContactForm />

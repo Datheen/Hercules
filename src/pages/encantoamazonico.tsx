@@ -7,7 +7,6 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { GridPattern } from "@/components/ui/GridPattern";
-import { Star } from "@/components/ui/Star";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export function EncantoAmazonico() {
@@ -25,7 +24,7 @@ export function EncantoAmazonico() {
         <GridPattern />
         <div
           id="container"
-          className=" max-w-360 z-20 mx-auto px-4 h-auto mt-25 text-white mb-10 md:mb-20 2xl:scale-120 2xl:py-33"
+          className=" max-w-360 z-20 mx-auto px-4 h-auto mt-25 text-white mb-10 md:mb-20 2xl:scale-120 2xl:py-53"
         >
           <div id="meta" className="px-2 md:px-20 flex flex-col gap-4 mb-10">
             <div
@@ -145,89 +144,104 @@ export function EncantoAmazonico() {
           <div className="py-16 md:px-20 px-4 space-y-12">
             <section className="space-y-4 leading-relaxed text-white/90">
               <p>
-                O site foi desenvolvido como um projeto completo de presença
-                digital, com foco em experiência do usuário, identidade visual e
-                um fluxo de compra simples e confiável. A proposta foi criar uma
-                interface moderna, clara e responsiva, valorizando a estética e
-                a proposta da marca.
+                {t(
+                  "O site foi desenvolvido como um projeto completo de presença digital, com foco em experiência do usuário, identidade visual e um fluxo de compra simples e confiável. A proposta foi criar uma interface moderna, clara e responsiva, valorizando a estética e a proposta da marca.",
+                  "The website was developed as a complete digital presence project, focused on user experience, visual identity and a simple and reliable purchase flow. The purpose was to create a modern, clear and responsive interface, valuing the aesthetics and the brand's proposal."
+                )}
               </p>
 
               <p>
-                A aplicação foi construída em <strong>React</strong> (sem
-                framework), priorizando uma estrutura bem organizada, navegação
-                fluida e componentes reutilizáveis para manter o projeto
-                escalável e fácil de evoluir.
+                {t(
+                  "A aplicação foi construída em",
+                  "The application was built with"
+                )} <strong>React</strong> {t(
+                  "(sem framework), priorizando uma estrutura bem organizada, navegação fluida e componentes reutilizáveis para manter o projeto escalável e fácil de evoluir.",
+                  "(without framework), prioritizing a well-organized structure, fluid navigation and reusable components to keep the project scalable and easy to evolve."
+                )}
               </p>
             </section>
 
             <section className="space-y-6">
               <h3 className="text-2xl font-semibold">
-                Processo de desenvolvimento
+                {t("Processo de desenvolvimento", "Development Process")}
               </h3>
 
               <div className="grid gap-8 md:grid-cols-2">
                 <div className="rounded-xl border border-lime-400 p-6 space-y-3">
                   <h4 className="text-lg font-semibold">
-                    Pagamentos e integração
+                    {t("Pagamentos e integração", "Payments and Integration")}
                   </h4>
                   <p className="text-white/90 leading-relaxed">
-                    Foi integrada a API de pagamento do{" "}
-                    <strong>PagSeguro</strong>, garantindo um checkout funcional
-                    e seguro. O objetivo foi oferecer uma jornada de pagamento
-                    clara, reduzindo atrito e aumentando a confiança do usuário
-                    durante a compra.
+                    {t(
+                      "Foi integrada a API de pagamento do",
+                      "The payment API from"
+                    )}{" "}
+                    <strong>PagSeguro</strong>{t(
+                      ", garantindo um checkout funcional e seguro. O objetivo foi oferecer uma jornada de pagamento clara, reduzindo atrito e aumentando a confiança do usuário durante a compra.",
+                      " was integrated, ensuring a functional and secure checkout. The goal was to offer a clear payment journey, reducing friction and increasing user confidence during purchase."
+                    )}
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-lime-400 p-6 space-y-3">
                   <h4 className="text-lg font-semibold">
-                    Banco de dados com Firebase
+                    {t("Banco de dados com Firebase", "Database with Firebase")}
                   </h4>
                   <p className="text-white/90 leading-relaxed">
-                    Para persistência de dados, o projeto utilizou{" "}
-                    <strong>Firebase</strong>, permitindo gerenciamento prático
-                    e rápido das informações, além de uma base sólida para
-                    futuras expansões, como autenticação, pedidos e catálogo
-                    dinâmico.
+                    {t(
+                      "Para persistência de dados, o projeto utilizou",
+                      "For data persistence, the project used"
+                    )}{" "}
+                    <strong>Firebase</strong>{t(
+                      ", permitindo gerenciamento prático e rápido das informações, além de uma base sólida para futuras expansões, como autenticação, pedidos e catálogo dinâmico.",
+                      ", allowing practical and fast information management, in addition to a solid base for future expansions, such as authentication, orders and dynamic catalog."
+                    )}
                   </p>
                 </div>
               </div>
             </section>
 
             <section className="space-y-6">
-              <h3 className="text-2xl font-semibold">Design e autoria</h3>
+              <h3 className="text-2xl font-semibold">{t("Design e autoria", "Design and Authorship")}</h3>
 
               <div className="grid gap-8 md:grid-cols-2">
                 <div className="rounded-xl border border-lime-400 p-6 space-y-3">
-                  <h4 className="text-lg font-semibold">Design no Figma</h4>
+                  <h4 className="text-lg font-semibold">{t("Design no Figma", "Figma Design")}</h4>
                   <p className="text-white/90 leading-relaxed">
-                    O layout foi planejado e prototipado no{" "}
-                    <strong>Figma</strong>, garantindo consistência visual,
-                    tipografia bem definida, espaçamentos corretos e uma
-                    experiência alinhada com a identidade da marca.
+                    {t(
+                      "O layout foi planejado e prototipado no",
+                      "The layout was planned and prototyped in"
+                    )}{" "}
+                    <strong>Figma</strong>{t(
+                      ", garantindo consistência visual, tipografia bem definida, espaçamentos corretos e uma experiência alinhada com a identidade da marca.",
+                      ", ensuring visual consistency, well-defined typography, correct spacing and an experience aligned with the brand's identity."
+                    )}
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-lime-400 p-6 space-y-3">
                   <h4 className="text-lg font-semibold">Greenleaf Studio</h4>
                   <p className="text-white/90 leading-relaxed">
-                    Este projeto foi desenvolvido pela{" "}
-                    <strong>Greenleaf Studio</strong>, com a maior parte da
-                    implementação feita por mim — desde a construção dos
-                    componentes em React até integrações e ajustes finais para
-                    entregar uma experiência completa e profissional.
+                    {t(
+                      "Este projeto foi desenvolvido pela",
+                      "This project was developed by"
+                    )}{" "}
+                    <strong>Greenleaf Studio</strong>{t(
+                      ", com a maior parte da implementação feita por mim — desde a construção dos componentes em React até integrações e ajustes finais para entregar uma experiência completa e profissional.",
+                      ", with most of the implementation done by me — from building components in React to integrations and final adjustments to deliver a complete and professional experience."
+                    )}
                   </p>
                 </div>
               </div>
             </section>
 
             <section className="space-y-4 leading-relaxed text-white/90">
-              <h3 className="text-2xl font-semibold">Resultado final</h3>
+              <h3 className="text-2xl font-semibold">{t("Resultado final", "Final Result")}</h3>
               <p>
-                O resultado é um site moderno, responsivo e funcional, com
-                integração de pagamentos e base de dados pronta para evoluir. Um
-                projeto pensado para unir estética, usabilidade e tecnologia,
-                entregando uma experiência consistente do início ao fim.
+                {t(
+                  "O resultado é um site moderno, responsivo e funcional, com integração de pagamentos e base de dados pronta para evoluir. Um projeto pensado para unir estética, usabilidade e tecnologia, entregando uma experiência consistente do início ao fim.",
+                  "The result is a modern, responsive and functional website, with payment integration and a database ready to evolve. A project designed to unite aesthetics, usability and technology, delivering a consistent experience from start to finish."
+                )}
               </p>
             </section>
           </div>
