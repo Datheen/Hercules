@@ -27,7 +27,7 @@ const auroraStyles = `
     }
   }
 
-  .aurora-text {
+  #aurora {
     background: linear-gradient(
       90deg,
       #7BCD00,
@@ -43,6 +43,43 @@ const auroraStyles = `
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: aurora 6s ease infinite;
+  }
+
+  .aurora-icon {
+    color: #7BCD00;
+    filter: drop-shadow(0 0 8px #7BCD00);
+    animation: auroraIcon 6s ease infinite;
+  }
+
+  @keyframes auroraIcon {
+    0% {
+      color: #7BCD00;
+      filter: drop-shadow(0 0 8px #7BCD00);
+    }
+    16.67% {
+      color: #4ade80;
+      filter: drop-shadow(0 0 8px #4ade80);
+    }
+    33.33% {
+      color: #22d3ee;
+      filter: drop-shadow(0 0 8px #22d3ee);
+    }
+    50% {
+      color: #3b82f6;
+      filter: drop-shadow(0 0 8px #3b82f6);
+    }
+    66.67% {
+      color: #06b6d4;
+      filter: drop-shadow(0 0 8px #06b6d4);
+    }
+    83.33% {
+      color: #10b981;
+      filter: drop-shadow(0 0 8px #10b981);
+    }
+    100% {
+      color: #7BCD00;
+      filter: drop-shadow(0 0 8px #7BCD00);
+    }
   }
 `;
 
@@ -128,9 +165,9 @@ function Features() {
               className="animated-box relative overflow-hidden rounded-lg border border-[#7BCD00] text-[#7BCD00] p-2"
             >
               <div className="flex min-h-45 flex-col justify-start rounded-md p-6">
-                <Icon className="mb-3 h-8 w-8" />
+                <Icon className="mb-3 h-8 w-8 aurora-icon" />
                 <div className="space-y-2">
-                  <h3 id="aurora" className="font-bold aurora-text">{title}</h3>
+                  <h3 id="aurora" className="font-bold">{title}</h3>
                   <p className="text-sm">{description}</p>
                 </div>
               </div>
