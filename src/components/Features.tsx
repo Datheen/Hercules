@@ -14,6 +14,38 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const auroraStyles = `
+  @keyframes aurora {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .aurora-text {
+    background: linear-gradient(
+      90deg,
+      #7BCD00,
+      #4ade80,
+      #22d3ee,
+      #3b82f6,
+      #06b6d4,
+      #10b981,
+      #7BCD00
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aurora 6s ease infinite;
+  }
+`;
+
 function Features() {
   const cardsRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
@@ -67,6 +99,7 @@ function Features() {
 
   return (
     <div className="w-full 2xl:scale-116 overflow-hidden">
+      <style>{auroraStyles}</style>
       <Marquee pauseOnHover className="[--duration:20s]">
         <div className="flex items-center gap-20 bg-black px-6 py-4">
           <img src={typescript} className="w-40 pb-2 ml-11" />
@@ -97,7 +130,7 @@ function Features() {
               <div className="flex min-h-45 flex-col justify-start rounded-md p-6">
                 <Icon className="mb-3 h-8 w-8" />
                 <div className="space-y-2">
-                  <h3 className="font-bold">{title}</h3>
+                  <h3 id="aurora" className="font-bold aurora-text">{title}</h3>
                   <p className="text-sm">{description}</p>
                 </div>
               </div>
