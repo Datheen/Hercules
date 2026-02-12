@@ -59,7 +59,7 @@ export function Projects() {
                 <div
                   id="card"
                   key={item.id}
-                  className="group shadow-2xl rounded-xl border-lime-400 border overflow-hidden active:scale-80 transition-all duration-700 bg-cover bg-center h-92.5 w-95"
+                  className="group shadow-2xl rounded-t-lg overflow-hidden active:scale-80 transition-all duration-700 bg-cover bg-center h-92.5 w-95"
                   style={{ backgroundImage: `url(${item.image})` }}
                 >
                   <div className="h-[56%]">
@@ -69,7 +69,7 @@ export function Projects() {
                       src={item.image}
                     />
                   </div>
-                  <div className="bg-zinc-900/65 backdrop-blur-xl border border-white/10 h-43 overflow-hidden px-6">
+                  <div className="bg-zinc-900/65 backdrop-blur-xl border border-white/10 h-43 px-6">
                     <div className="mt-3 flex gap-2" id="badges">
                       <div className={item.variant}>
                         <span className="flex items-center justify-center text-white/90">
