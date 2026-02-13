@@ -45,7 +45,7 @@ export function Header() {
             </div>
 
             <p className="text-lime-400 hidden md:block font-semibold text-xl">
-              Ckristian Felipe
+              Ckristian DEV
             </p>
           </div>
 

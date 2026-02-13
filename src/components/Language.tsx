@@ -24,7 +24,7 @@ export function Language() {
         >
           <button
             onClick={() => handleLanguageChange("en")}
-            className={`flex items-center gap-3 w-full px-5 py-3 hover:bg-green-800/20 transition-colors ${
+            className={`flex items-center gap-3 w-full px-5 py-3 hover:cursor-pointer hover:bg-green-800/20 transition-colors ${
               language === "en" ? "bg-green-800/30" : ""
             }`}
           >
@@ -33,7 +33,7 @@ export function Language() {
           </button>
           <button
             onClick={() => handleLanguageChange("pt")}
-            className={`flex items-center gap-3 w-full px-5 py-3 hover:bg-green-800/20 transition-colors ${
+            className={`flex items-center gap-3 w-full px-5 py-3 hover:cursor-pointer hover:bg-green-800/20 transition-colors ${
               language === "pt" ? "bg-green-800/30" : ""
             }`}
           >
@@ -45,7 +45,7 @@ export function Language() {
         {/* Main Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-16 h-16 rounded-full flex items-center justify-center bg-green-800 hover:bg-green-700 border-2 border-green-600 shadow-lg hover:shadow-green-800/50 transition-all duration-300 hover:scale-110 group"
+          className="w-16 h-16 rounded-full hover:cursor-pointer flex items-center justify-center bg-green-800 hover:bg-green-700 border-2 border-green-600 shadow-lg hover:shadow-green-800/50 transition-all duration-300 hover:scale-110 group"
           aria-label="Change language"
         >
           <Globe className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-500" />

@@ -6,13 +6,13 @@ export function Footer() {
 
   return (
     <footer className="bg-black rounded-t-4xl">
-      <div className="mx-auto w-full max-w-360 p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-360 p-4 md:px-20 2xl:px-0 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-8 mt-1 md:mb-0">
             <div className="flex items-center">
               <AtomIcon size={40} className="text-white" />
               <span className="text-heading bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent pl-1 self-center text-3xl md:text-4xl font-semibold whitespace-nowrap">
-                Ckristian Dev
+                Ckristian DEV
               </span>
             </div>
           </div>

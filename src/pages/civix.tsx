@@ -95,7 +95,7 @@ export function Civix() {
             <div id="text-descript" className="text-lg font-normal mt-5">
               <span className="font-medium">
                 Civix {t("Advocacia", "Law Firm")}
-              </span>{" "}
+              </span>
               {t(
                 "foi desenvolvido como uma landing page estratégica, com foco em autoridade, clareza e conversão. A proposta era transmitir credibilidade e profissionalismo desde o primeiro contato, mantendo uma navegação simples, direta e objetiva.",
                 "was developed as a strategic landing page, focused on authority, clarity and conversion. The purpose was to convey credibility and professionalism from the first contact, maintaining simple, direct and objective navigation."

@@ -10,7 +10,7 @@ export function Sobre() {
   return (
     <div
       id="container"
-      className="max-w-360 h-max px-2 md:px-30 flex flex-col justify-center items-center mx-auto mb-10 pt-25"
+      className="max-w-360 h-max px-2 md:px-30 flex flex-col justify-center items-center mx-auto mb-10 pt-25 2xl:scale-130 2xl:py-60 md:py-30"
     >
       <div className="md:ml-18 flex flex-col md:flex-row items-center text-white font-medium mb-10">
         <img className="w-70 rounded-full" src={dev} />
@@ -48,7 +48,7 @@ export function Sobre() {
       </div>
 
       <div className="h-max mt-20 text-white font-light px-7 flex flex-col gap-5">
-        <h1 className="bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent text-[1.4rem] md:text-4xl font-medium">
+        <h1 className="bg-linear-to-r from-lime-400 to-green-700 bg-clip-text text-transparent text-[1.4rem] md:text-4xl font-medium h-11">
           {t("Minha jornada com a tecnologia", "My journey with technology")}
         </h1>
         <p>
