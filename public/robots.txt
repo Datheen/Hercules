@@ -1,0 +1,10 @@
+# robots.txt for ckristian.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ckristian.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
